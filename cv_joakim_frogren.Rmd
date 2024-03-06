@@ -4,7 +4,7 @@ surname: Frögren
 address: |
  | E. Lindahlsgatan 9, Malmö
 phone: +46 73 516 12 12
-profilepic: joakim3.jpg
+profilepic: joakim.png
 email: "joakim@frogren.se"
 date: "`r format(Sys.time(), '%Y-%m-%d')`"
 aboutme: "Marie is a Polish and naturalized-French physicist and chemist who conducts pioneering research on radioactivity."
@@ -51,11 +51,6 @@ tribble(
 ```
 # Publikationer
 
-```{r}
-library(dplyr)
-knitr::write_bib(c("vitae", "tibble"), "packages.bib")
-
-bibliography_entries("packages.bib") %>%
-  arrange(desc(author$family), issued)
-```
-
+```{r publications} 
+bibliography_entries("library.bib", "Publications") 
+``` 
