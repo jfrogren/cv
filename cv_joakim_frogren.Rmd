@@ -24,10 +24,6 @@ library(vitae)
 
 # Utbildning
 
-```{r, include=FALSE}
-options(tinytex.verbose = TRUE)
-```
-
 ```{r}
 library(tibble)
 tribble(
@@ -62,3 +58,4 @@ knitr::write_bib(c("vitae", "tibble"), "packages.bib")
 bibliography_entries("packages.bib") %>%
   arrange(desc(author$family), issued)
 ```
+
