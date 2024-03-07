@@ -7,8 +7,9 @@ phone: +46 73 516 12 12
 profilepic: joakim.png
 email: "joakim@frogren.se"
 date: "Födelsedatum: 31 oktober 1979"
-aboutme: "Här kommer jag att skriva en kort text som sammanfattar mina kunskaper och karriäranspråk."
+aboutme: "Den röda tråden..."
 output: vitae::twentyseconds
+linkcolor: blue
 ---
 
 ```{r setup, include=FALSE}
@@ -22,7 +23,7 @@ library(vitae)
 library(tibble)
 tribble(
   ~ What, ~ Year, ~ Institution, ~ Where,
-  "\\href{https://portal.research.lu.se/en/publications/on-user-involvement-in-research-on-ageing-and-health}{Doktorsexamen i medicinsk vetenskap}", "2023", "", "Lunds universitet",
+  "Doktorsexamen i medicinsk vetenskap", "2023", "\\href{https://portal.research.lu.se/en/publications/on-user-involvement-in-research-on-ageing-and-health}{Länk till avhandlingen}", "Lunds universitet",
   "Magisterexamen i kognitionsvetenskap", "2013", "", "Linköpings universitet"
 ) %>% 
   detailed_entries(What, Year, Institution, Where,
@@ -43,7 +44,28 @@ tribble(
   )
 ```
 -->
-# Övrig utbildning
+# Presentationer av min forskning
+<!--
+- 20 april 2023 - Avslutningskonferens för forskningsprogrammet UserAge, Lund (https://www.medicin.lu.se/evenemang/avslutningskonferens-userage)
+- 18 oktober 2022 Webbinarie om fysiska hinder i svenska hem, Stockholm (https://www.youtube.com/watch?v=z5JId15gq9w&t=25m21s) 
+- 7 november 2019 CASE-dagen (Centre for Ageing & Supportive Environments),Lund  (https://www.youtube.com/watch?v=S2LeICgasAo)
+- 7-11 maj 2018 11th World Conference of Gerontechnology i St. Petersburg, Florida (https://journal.gerontechnology.org/pastIssuesList.aspx?iid=112)
+
+-->
+```{r}
+library(tibble)
+tribble(
+  ~ What, ~ Year, ~ Institution, ~ Where,
+  "\\href{https://www.medicin.lu.se/evenemang/avslutningskonferens-userage}{Avslutningskonferens för forskningsprogrammet UserAge, Lund}", "2023", "", "Presentation av de fyra studierna i min avhandling",
+  "Webbinarie om fysiska hinder i svenska hem, Stockholm", "2022", "", "\\href{https://www.youtube.com/watch?v=z5JId15gq9w&t=25m21s}{Redovisning av resultat från fjärde delstudien i avhandlingen}",
+  "\\href{https://journal.gerontechnology.org/pastIssuesList.aspx?iid=112}{CASE-dagen (Centre for Ageing and Supportive Environments)}", "2019", "", "Presentation av andra delstudien i avhandlingen",
+  "\\href{https://journal.gerontechnology.org/pastIssuesList.aspx?iid=112}{11th World Conference of Gerontechnology, St. Pete, Florida}", "2018", "", "Presentation av abstract från första delstudien i avhandlingen"
+) %>% 
+  detailed_entries(What, Year, Institution, Where,
+                   .protect = FALSE)
+```
+
+# Utbildning inom hälsa och språk
 ```{r}
 library(tibble)
 tribble(
@@ -51,9 +73,7 @@ tribble(
   "\\href{https://www.lu.se/lubas/i-uoh-lu-LIVA19}{Litterära perspektiv på sjukdom och död (7,5 hp)}", "2024-", "", "Lunds universitet",
   "Doktorandstudier i tillämpad hälsovetenskap", "2016-2018", "", "Blekinge tekniska högskola",
   "Svenska som andraspråk 1 (30 hp)", "2014-2015", "", "Linköpings universitet",
-  "Engelska A (30 hp)", "2005-2006", "", "Linköpings universitet",
-  "Franskastudier", "2001-2002", "", "Alliance Française i Lyon, Frankrike",
-  "Idéhistoria A (30 hp)", "2000", "", "Umeå universitet"
+  "Engelska A (30 hp)", "2005-2006", "", "Linköpings universitet"
 ) %>% 
   detailed_entries(What, Year, Institution, Where,
                    .protect = FALSE)
@@ -65,8 +85,8 @@ library(tibble)
 tribble(
   ~ Degree, ~ Year, ~ Institution, ~ Where,
   "Handledare inom socialpsykiatrin, Lunds kommun", "2023-", "", "Ge stöd och vård till personer med psykisk ohälsa",
-  "Köphjälpmedelsansvarig vid Ikea Barkarby, Stockholm", "2015-2016", "", "Ansvara för logistik av köphjälpmedel och arbetsleda kollegor",
-  "Lärare i svenska som andraspråk vid Folkuniversitetet, Linköping", "2015", "", "Organisera och leda utbildning i yrkessvenska",
+  "Kundhjälpmedelsansvarig, Ikea, Stockholm", "2015-2016", "", "Ansvara för logistik av kundhjälpmedel och arbetsleda kollegor",
+  "Lärare i svenska som andraspråk vid Folkuniversitetet, Linköping", "2015", "", "Organisera och leda utbildning i yrkessvenska (6 månaders-vikariat)",
   "Taltjänsttolk vid Tolkcentralen, Region Östergötland, Linköping", "2004-2015", "", "Genom alternativ- och kompletterande kommunikation (AKK) stötta personer med tal- och språksvårigheter i att kommunicera självständigt"
 ) %>% 
   detailed_entries(Degree, Year, Institution, Where)
@@ -81,6 +101,7 @@ tribble(
 ```{r}
 tribble(
   ~a, ~b,
+  "Modersmål", "Svenska",
   "Flytande","Engelska",
   "Mycket goda kunskaper","Franska",
   "Grundläggande kunskaper", "Italienska"
@@ -102,9 +123,7 @@ tribble(
   "SPSS 29", "Goda kunskaper", 
   "REDCap", "Goda kunskaper",  
   "R (RStudio)", "Grundläggande kunskaper",
-  "PHP/MySQL ", "Grundläggande kunskaper",
   "HTML", "Grundläggande kunskaper",
-   "R Markdown", "Grundläggande kunskaper"
 ) %>% 
   brief_entries(
     b, 
