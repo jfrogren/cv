@@ -2,12 +2,12 @@
 name: Joakim
 surname: Frögren
 address: |
- | E. Lindahlsgatan 9, Malmö
+    | Edward Lindahlsgatan 9 \newline 217 42 Malmö
 phone: +46 73 516 12 12
 profilepic: joakim.png
 email: "joakim@frogren.se"
 date: "Födelsedatum: 31 oktober 1979"
-aboutme: "Marie is a Polish and naturalized-French physicist and chemist who conducts pioneering research on radioactivity."
+aboutme: "Här kommer jag att skriva en kort text som sammanfattar mina kunskaper och karriäranspråk."
 output: vitae::twentyseconds
 ---
 
@@ -21,27 +21,44 @@ library(vitae)
 ```{r}
 library(tibble)
 tribble(
-  ~ Degree, ~ Year, ~ Institution, ~ Where,
-  "Doktorsexamen i medicinsk vetenskap", "2023", "Länk till avhandling", "Lunds universitet",
+  ~ What, ~ Year, ~ Institution, ~ Where,
+  "\\href{https://portal.research.lu.se/en/publications/on-user-involvement-in-research-on-ageing-and-health}{Doktorsexamen i medicinsk vetenskap}", "2023", "", "Lunds universitet",
   "Magisterexamen i kognitionsvetenskap", "2013", "", "Linköpings universitet"
 ) %>% 
-  detailed_entries(Degree, Year, Institution, Where)
+  detailed_entries(What, Year, Institution, Where,
+                   .protect = FALSE)
 ```
+<!--
+# Vetenskapliga arbeten
 
+```{r}
+library(tibble)
+tribble(
+  ~what, ~year,
+  "\\href{https://portal.research.lu.se/en/publications/on-user-involvement-in-research-on-ageing-and-health}{Frögren, J. (2023). On User Involvement in Research on Ageing and Health. [Doctoral Thesis, Department of Health Sciences]. Lund University, Faculty of Medicine.}", "Avhandling",
+) %>% 
+  brief_entries(
+    what, year,
+    .protect = FALSE
+  )
+```
+-->
 # Övrig utbildning
 ```{r}
 library(tibble)
 tribble(
-  ~ Degree, ~ Year, ~ Institution, ~ Where,
-  "Litterära perspektiv på sjukdom och död (7,5 hp)", "2024-", "", "Lunds universitet",
+  ~ What, ~ Year, ~ Institution, ~ Where,
+  "\\href{https://www.lu.se/lubas/i-uoh-lu-LIVA19}{Litterära perspektiv på sjukdom och död (7,5 hp)}", "2024-", "", "Lunds universitet",
   "Doktorandstudier i tillämpad hälsovetenskap", "2016-2018", "", "Blekinge tekniska högskola",
   "Svenska som andraspråk 1 (30 hp)", "2014-2015", "", "Linköpings universitet",
   "Engelska A (30 hp)", "2005-2006", "", "Linköpings universitet",
   "Franskastudier", "2001-2002", "", "Alliance Française i Lyon, Frankrike",
   "Idéhistoria A (30 hp)", "2000", "", "Umeå universitet"
 ) %>% 
-  detailed_entries(Degree, Year, Institution, Where)
+  detailed_entries(What, Year, Institution, Where,
+                   .protect = FALSE)
 ```
+
 # Arbetslivserfarenhet
 ```{r}
 library(tibble)
