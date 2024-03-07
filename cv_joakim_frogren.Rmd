@@ -22,7 +22,7 @@ library(vitae)
 library(tibble)
 tribble(
   ~ Degree, ~ Year, ~ Institution, ~ Where,
-  "Doktorsexamen i medicinsk vetenskap", "2023", "", "Lunds universitet",
+  "Doktorsexamen i medicinsk vetenskap", "2023", "Länk till avhandling", "Lunds universitet",
   "Magisterexamen i kognitionsvetenskap", "2013", "", "Linköpings universitet"
 ) %>% 
   detailed_entries(Degree, Year, Institution, Where)
@@ -43,21 +43,64 @@ tribble(
   detailed_entries(Degree, Year, Institution, Where)
 ```
 # Arbetslivserfarenhet
+```{r}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where,
+  "Handledare inom socialpsykiatrin, Lunds kommun", "2023-", "", "Ge stöd och vård till personer med psykisk ohälsa",
+  "Köphjälpmedelsansvarig vid Ikea Barkarby, Stockholm", "2015-2016", "", "Ansvara för logistik av köphjälpmedel och arbetsleda kollegor",
+  "Lärare i svenska som andraspråk vid Folkuniversitetet, Linköping", "2015", "", "Organisera och leda utbildning i yrkessvenska",
+  "Taltjänsttolk vid Tolkcentralen, Region Östergötland, Linköping", "2004-2015", "", "Genom alternativ- och kompletterande kommunikation (AKK) stötta personer med tal- och språksvårigheter i att kommunicera självständigt"
+) %>% 
+  detailed_entries(Degree, Year, Institution, Where)
+```
+<!--
+"EU:s ungdomsprogram, del 3: Framtidssatsning, Vilnius, Litauen", "2004-2005", "", "I samarbete med Film i Sörmland och Kriminellas Revansch i Samhället (KRIS) producera och regissera en kortfilm och turnera med filmen i svenska gymnasieskolor",
+  "EU:s ungdomsprogram, del 2: Volontärtjänst, Lyon, Frankrike", "2001-2002", "", "Tillsammans med franska ungdomar planera och bedriva sociala projekt i samarbete med olika organisationer och företag",
+  "Personlig assistent, Umeå kommun", "2000-2001", "", "Stötta en person med muskelsjukdom med de dagliga aktiviteterna"
+-->
 
+# Språkkunskaper
 ```{r}
 tribble(
-  ~Year, ~Type, ~Desc,
-  1903, "Physics", "Awarded for her work on radioactivity with Pierre Curie and Henri Becquerel",
-  1911, "Chemistry", "Awarded for the discovery of radium and polonium"
+  ~a, ~b,
+  "Flytande","Engelska",
+  "Mycket goda kunskaper","Franska",
+  "Grundläggande kunskaper", "Italienska"
 ) %>% 
   brief_entries(
-    glue::glue("Nobel Prize in {Type}"),
-    Year, 
-    Desc
+    a, 
+    b
   )
 ```
+
+
+# IT-kunskaper
+```{r}
+tribble(
+  ~a, ~b,
+  "Mac OS X", "Mycket goda kunskaper",
+  "Windows 11", "Mycket goda kunskaper",
+  "Office 2021", "Mycket goda kunskaper",
+  "SPSS 29", "Goda kunskaper", 
+  "REDCap", "Goda kunskaper",  
+  "R (RStudio)", "Grundläggande kunskaper",
+  "PHP/MySQL ", "Grundläggande kunskaper",
+  "HTML", "Grundläggande kunskaper",
+   "R Markdown", "Grundläggande kunskaper"
+) %>% 
+  brief_entries(
+    b, 
+    a
+  )
+```
+
+<!--
 # Publikationer
 
 ```{r publications} 
 bibliography_entries("library.bib", "Publications") 
+
+
 ``` 
+-->
