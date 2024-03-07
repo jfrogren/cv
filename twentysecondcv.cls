@@ -286,3 +286,10 @@
 %----------------------------------------------------------------------------------------
 
 \RequirePackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+	linkcolor=red,          % color of internal links (change box color with linkbordercolor)
+    citecolor=green,        % color of links to bibliography
+    filecolor=magenta,      % color of file links
+    urlcolor=blue,
+}
