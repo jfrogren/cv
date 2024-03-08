@@ -56,21 +56,21 @@ tribble(
 library(tibble)
 tribble(
   ~ What, ~ Year, ~ Institution, ~ Where,
-  "\\href{https://www.medicin.lu.se/evenemang/avslutningskonferens-userage}{Avslutningskonferens för forskningsprogrammet UserAge, Lund}", "2023", "", "Presentation av de fyra studierna i min avhandling",
-  "Webbinarie om fysiska hinder i svenska hem, Stockholm", "2022", "", "\\href{https://www.youtube.com/watch?v=z5JId15gq9w&t=25m21s}{Redovisning av resultat från fjärde delstudien i avhandlingen}",
-  "\\href{https://journal.gerontechnology.org/pastIssuesList.aspx?iid=112}{CASE-dagen (Centre for Ageing and Supportive Environments)}", "2019", "", "Presentation av andra delstudien i avhandlingen",
-  "\\href{https://journal.gerontechnology.org/pastIssuesList.aspx?iid=112}{11th World Conference of Gerontechnology, St. Pete, Florida}", "2018", "", "Presentation av abstract från första delstudien i avhandlingen"
+  "Avslutningskonferens för forskningsprogrammet UserAge, Lund", "2023", "", "Presentation av de fyra studierna i avhandlingen",
+  "Webbinarie om Bostadsförsöket, Stockholm", "2022", "\\href{https://www.youtube.com/watch?v=z5JId15gq9w&t=25m21s}{Länk till min redogörelse}", "Redogörelse för resultatet i fjärde delstudien i avhandlingen",
+  "CASE-dagen, Lund \\newline (Centre for Ageing and Supportive Environments)", "2019", "", "Presentation av andra delstudien i avhandlingen",
+  "11th World Conference of Gerontechnology, St. Pete., Florida", "2018", "", "Presentation av abstract från första delstudien i avhandlingen"
 ) %>% 
   detailed_entries(What, Year, Institution, Where,
                    .protect = FALSE)
 ```
 
-# Utbildning inom hälsa och språk
+# Studier utöver de examensgrundande
 ```{r}
 library(tibble)
 tribble(
   ~ What, ~ Year, ~ Institution, ~ Where,
-  "\\href{https://www.lu.se/lubas/i-uoh-lu-LIVA19}{Litterära perspektiv på sjukdom och död (7,5 hp)}", "2024-", "", "Lunds universitet",
+  "Litterära perspektiv på sjukdom och död (7,5 hp)", "2024-", "", "Lunds universitet",
   "Doktorandstudier i tillämpad hälsovetenskap", "2016-2018", "", "Blekinge tekniska högskola",
   "Svenska som andraspråk 1 (30 hp)", "2014-2015", "", "Linköpings universitet",
   "Engelska A (30 hp)", "2005-2006", "", "Linköpings universitet"
@@ -84,9 +84,9 @@ tribble(
 library(tibble)
 tribble(
   ~ Degree, ~ Year, ~ Institution, ~ Where,
-  "Handledare inom socialpsykiatrin, Lunds kommun", "2023-", "", "Ge stöd och vård till personer med psykisk ohälsa",
+  "Handledare inom socialpsykiatrin, Lunds kommun", "2023-", "", "Ge stöd och vård till personer med psykisk funktionsnedsättning",
   "Kundhjälpmedelsansvarig, Ikea, Stockholm", "2015-2016", "", "Ansvara för logistik av kundhjälpmedel och arbetsleda kollegor",
-  "Lärare i svenska som andraspråk vid Folkuniversitetet, Linköping", "2015", "", "Organisera och leda utbildning i yrkessvenska (6 månaders-vikariat)",
+  "Lärare i svenska som andraspråk, Folkuniversitetet, Linköping", "2015", "", "Organisera och leda utbildning i yrkessvenska (halvårsvikariat)",
   "Taltjänsttolk vid Tolkcentralen, Region Östergötland, Linköping", "2004-2015", "", "Genom alternativ- och kompletterande kommunikation (AKK) stötta personer med tal- och språksvårigheter i att kommunicera självständigt"
 ) %>% 
   detailed_entries(Degree, Year, Institution, Where)
