@@ -1,0 +1,157 @@
+---
+name: Joakim
+surname: Frögren
+position: "Filosofie doktor i medicinsk vetenskap"
+address: "791031-7119"
+profilepic: "./img/me.jpg"
+www: "Edward Lindahlsgatan 9, 217 42 Malmö"
+email: "joakim@frogren.se"
+phone: +46 73 516 12 12
+github: jfrogren
+linkedin: joakimfrogren
+date: "`r format(Sys.time(), '%B %Y')`"
+headcolor: 121270
+aboutme: "Mina intressen för kommunikation och hälsa löper som en röd tråd genom mina studie- och yrkesval. De har också format mig till en god pedagog med tålamod och förståelse för människors olika förutsättningar. Efter intensiva doktorandstudier och en välbehövlig respit från akademin efter erlagd examen, är jag nu motiverad att ta nästa steg i min karriär. Jag känner en längtan tillbaka till det akademiska, intellektuellt stimulerande arbetet."
+docname: CV
+output: vitae::awesomecv
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,
+                      warning = FALSE,
+                      message = FALSE)
+
+require(xfun)
+
+packages <- c('vitae'     # The CV's LaTeX Template
+             ,'tibble'    # Data structure for tribbles
+             ,'magrittr'  # The Pipe %>%
+             ,'here'      # Relative File Paths
+             ,'readr'     # Data Loading
+             ,'glue'      # String Manipulation
+            )
+
+xfun::pkg_attach2(packages, message = FALSE)
+
+source(file = here("r","data.r"))
+
+```
+
+# Examina
+
+```{r EDUCATION}
+
+edu1 %>%
+  detailed_entries(
+    with = inst,
+    what = degree,
+    why = detail,
+    when = glue::glue("{startYear} --> {endYear}",.na = ""),
+    where = where
+  )
+
+```
+
+# Övrig utbildning
+
+```{r EDUCATION2}
+
+edu2 %>%
+  detailed_entries(
+    with = inst,
+    what = degree,
+    why = detail,
+    when = glue::glue("{startYear} --> {endYear}",.na = ""),
+    where = where
+  )
+
+```
+
+# Anställningar
+```{r EMPLOYMENT}
+
+work %>%
+  detailed_entries(
+    with = title,
+    what = unit,
+    why = detail,
+    when = glue::glue("{startMonth} {startYear} --> {endMonth} {endYear}",.na = ""),
+    where = where
+  )
+
+```
+
+
+# Språkkunskaper
+
+```{r SKILLS}
+
+skills1 %>%
+  detailed_entries(
+    with = area,
+    what = skills
+  )
+
+```
+
+# Fullständig publikationslista
+
+```{r HONORS}
+
+honors %>%
+  detailed_entries(
+    with = area,
+    what = accomplishment,
+    why = detail,
+    when = year,
+    where = where
+  )
+
+```
+
+# Projects
+
+```{r PROJECTS}
+
+projects %>%
+  detailed_entries(
+    with = area,
+    what = accomplishment,
+    why = detail,
+    when = year,
+    where = where
+  )
+
+```
+
+# Works
+
+```{r WORKS}
+
+works %>%
+  detailed_entries(
+    with = area,
+    what = accomplishment,
+    why = detail,
+    when = year,
+    where = where
+  )
+
+```
+
+\pagebreak
+
+# Certifications
+
+```{r CERTIFICATIONS}
+
+certifications %>%
+  detailed_entries(
+    with = area,
+    what = accomplishment,
+    why = detail,
+    when = year,
+    where = where
+  )
+
+```
