@@ -7,8 +7,6 @@ profilepic: "./img/me.jpg"
 www: "Edward Lindahlsgatan 9, 217 42 Malmö"
 email: "joakim@frogren.se"
 phone: +46 73 516 12 12
-github: jfrogren
-linkedin: joakimfrogren
 date: "`r format(Sys.time(), '%B %Y')`"
 headcolor: 121270
 aboutme: "Mina intressen för kommunikation och hälsa löper som en röd tråd genom mina studie- och yrkesval. De har också format mig till en god pedagog med tålamod och förståelse för människors olika förutsättningar. Efter intensiva doktorandstudier och en välbehövlig respit från akademin efter erlagd examen, är jag nu motiverad att ta nästa steg i min karriär. Jag känner en längtan tillbaka till det akademiska, intellektuellt stimulerande arbetet."
