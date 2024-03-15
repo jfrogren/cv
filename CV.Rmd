@@ -9,7 +9,7 @@ email: "joakim@frogren.se"
 phone: +46 73 516 12 12
 date: "`r format(Sys.time(), '%B %Y')`"
 headcolor: 121270
-aboutme: "Mina intressen för kommunikation och hälsa löper som en röd tråd genom mina studie- och yrkesval. Erfarenheterna jag bär med mig har också format mig till en god pedagog med tålamod och förståelse för människors olika förutsättningar. Efter erlagd doktorsexamen och en tids uppehåll från akademin, är jag nu motiverad att ta nästa steg i min akademiska karriär."
+aboutme: "Mina intressen för kommunikation och hälsa löper som en röd tråd genom mina studie- och yrkesval. Erfarenheterna jag bär med mig har också format mig till en god pedagog med tålamod och förståelse för människors olika förutsättningar. Efter erlagd doktorsexamen och en tids uppehåll från akademin, är jag nu redo att ta nästa steg i min akademiska karriär."
 docname: CV
 output: vitae::awesomecv
 ---
@@ -94,6 +94,19 @@ skills1 %>%
 
 # Fullständig publikationslista
 
+```{r publications} 
+bibliography_entries("publications.bib", "Publications") 
+
+``` 
+
+
+<!-- - Dabiri, Z., Hölbling, D., **Abad, L.**, Guðmundsson, S. (2021). [*Comparing the Applicability of Sentinel-1 and Sentinel-2 for Mapping the Evolution of Ice-marginal Lakes in Southeast Iceland*](https://doi.org/10.1553/giscience2021_01_s46). GI_Forum, 1(1), 46–52. -->
+<!-- - Argentin, A. L., Robl, J., Prasicek, G., Hergarten, S., Hölbling, D., **Abad, L.**, Dabiri, Z. (2021). [*Controls on the formation and size of potential landslide dams and dammed lakes in the Austrian Alps*](https://doi.org/10.5194/nhess-21-1615-2021). Natural Hazards and Earth System Sciences, 21(5), 1615-1637.  -->
+<!-- - Dabiri, Z., Hölbling, D., **Abad, L.**, Helgason, J. K., Sæmundsson, Þ., Tiede, D. (2020). [*Generation of Multi-Temporal DEMs from Sentinel-1 for Assessing Geomorphological Changes in the Hítardalur Valley, Western Iceland*](https://doi.org/10.1130/abs/2020AM-357105). Geological Society of America Abstracts with Programs, 52 (6). -->
+<!-- - Hennig, S., **Abad, L.**, Hölbling, D., Tiede, D. (2020). [*Implementing Geo Citizen Science Solutions: Experiences from the citizenMorph Project*](https://doi.org/10.1553/giscience2020). Journal for Geographic Information Science, 7(2), 3–14. -->
+<!-- - **Abad, L.**, Hölbling, D., Spiekermann, R., Dabiri, Z., Prasicek, G., Argentin, A.-L. (2020). [*Mapping and monitoring of landslide-dammed lakes using Sentinel-2 time series -a case study after the 2016 Kaikōura Earthquake in New Zealand*](https://doi.org/10.5194/egusphere-egu2020-572). EGU General Assembly 2020. -->
+<!-- - **Abad, L.**, Mejia, D., Leon, P., Cardenas, I., Pacheco, B., Tonon, M. (2017). [*Water Quality and Environmental Variables on Endangered Amphibious’ Habitats in Cuenca’s City Urban Area*](http://dspace.ucuenca.edu.ec/retrieve/0c371040-81df-45c9-9167-37f5a1e5dc32/documento.pdf) (Spanish). Revista de la Facultad de Ciencias Quimicas, 18. p. 18-34. -->
+
 ```{r HONORS}
 
 honors %>%
@@ -106,7 +119,7 @@ honors %>%
   )
 
 ```
-
+-->
 # Projects
 
 ```{r PROJECTS}

@@ -276,6 +276,10 @@
 % Usage: \name{<position>}
 \newcommand*{\position}[1]{\def\@position{#1}}
 
+% Defines writer's pronouns (optional)
+% Usage: \pronouns{<pronouns>}
+\newcommand*{\pronouns}[1]{\def\@pronouns{#1}}
+
 % Defines writer's mobile (optional)
 % Usage: \mobile{<mobile number>}
 \newcommand*{\mobile}[1]{\def\@mobile{#1}}
@@ -287,6 +291,10 @@
 % Defines writer's homepage (optional)
 % Usage: \homepage{<url>}
 \newcommand*{\homepage}[1]{\def\@homepage{#1}}
+
+% Defines writer's orcid (optional)
+% Usage: \orcid{<orcid>}
+\newcommand*{\orcid}[1]{\def\@orcid{#1}}
 
 % Defines writer's Publons account (optional)
 % Usage: \publons{<publons>}
@@ -317,10 +325,6 @@
 % Defines writer's linked-in (optional)
 % Usage: \linkedin{<linked-in-nick>}
 \newcommand*{\linkedin}[1]{\def\@linkedin{#1}}
-
-% Defines writer's orcid (optional)
-% Usage: \orcid{<orcid>}
-\newcommand*{\orcid}[1]{\def\@orcid{#1}}
 
 % Usage: \twitter{<twitter handle>}
 \newcommand*{\twitter}[1]{\def\@twitter{#1}}
@@ -455,11 +459,17 @@
     \headersocialstyle{%
       \newbool{isstart}%
       \setbool{isstart}{true}%
+      \ifthenelse{\isundefined{\@pronouns}}%
+        {}%
+        {%
+          \faComment\acvHeaderIconSep\@pronouns%
+          \setbool{isstart}{false}%
+        }%
       \ifthenelse{\isundefined{\@mobile}}%
         {}%
         {%
+          \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
           \faMobile\acvHeaderIconSep\@mobile%
-          \setbool{isstart}{false}%
         }%
       \ifthenelse{\isundefined{\@email}}%
         {}%
@@ -471,7 +481,7 @@
         {}%
         {%
           \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
-          \href{}{\faHome\acvHeaderIconSep\@homepage}%
+          \href{http://\@homepage}{\faHome\acvHeaderIconSep\@homepage}%
         }%
       \ifthenelse{\isundefined{\@orcid}}%
         {}%
