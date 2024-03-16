@@ -10,7 +10,6 @@ phone: +46 73 516 12 12
 date: "`r format(Sys.time(), '%B %Y')`"
 headcolor: 121270
 aboutme: "Mina intressen för kommunikation och hälsa löper som en röd tråd genom mina studie- och yrkesval. Erfarenheterna jag bär med mig har också format mig till en god pedagog med tålamod och förståelse för människors olika förutsättningar. Efter erlagd doktorsexamen och en tids uppehåll från akademin, är jag nu redo att ta nästa steg i min akademiska karriär."
-bibliography: publications.bib
 given-name-pattern: Joakim
 family-name-pattern: Frögren
 docname: CV
@@ -134,7 +133,7 @@ bibliography_entries("konferensbidrag.bib")
 
 \vspace{4mm}
 
-# Presentationer av min forskning
+# Muntliga presentationer av min forskning
 
 ```{r EDUCATION3}
 
@@ -157,7 +156,11 @@ edu3 %>%
 
 \vspace{5mm}
 
-## IT-kunskaper
+# Övriga meriter och kompetenser 
+
+\vspace{4mm}
+
+## IT-kompetens
 
 ```{r SKILLS2}
 
@@ -165,53 +168,6 @@ skills2 %>%
   detailed_entries(
     with = area,
     what = skills
-  )
-
-```
-
-```{r PROJECTS}
-
-projects %>%
-  detailed_entries(
-    with = area,
-    what = accomplishment,
-    why = detail,
-    when = year,
-    where = where
-  )
-
-```
-
-# Works
-
-```{r WORKS}
-
-works %>%
-  detailed_entries(
-    with = area,
-    what = accomplishment,
-    why = detail,
-    when = year,
-    where = where
-  )
-
-```
-
-
-
-\pagebreak
-
-# Certifications
-
-```{r CERTIFICATIONS}
-
-certifications %>%
-  detailed_entries(
-    with = area,
-    what = accomplishment,
-    why = detail,
-    when = year,
-    where = where
   )
 
 ```
