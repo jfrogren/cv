@@ -100,12 +100,16 @@ skills1 %>%
 
 # Fullständig publikationslista
 
+\vspace{4mm}
+
 ## Doktorsavhandling
 
 ```{r} 
 bibliography_entries("thesis.bib") 
 
 ``` 
+
+\vspace{4mm}
 
 ## Peer-review-granskade artiklar
 
@@ -114,7 +118,14 @@ bibliography_entries("publications.bib")
 
 ``` 
 
+\vspace{4mm}
+
 ## Konferensbidrag:
+
+```{r} 
+bibliography_entries("konferensbidrag.bib") 
+
+``` 
 
 
 

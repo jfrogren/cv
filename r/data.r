@@ -62,8 +62,8 @@ edu2 <- tribble(
 
 work <- tribble(
     ~title, ~unit, ~startMonth, ~startYear, ~endMonth, ~endYear, ~where, ~detail,
-    "Bedömande lärare på fristånde kurs inom folkhälsovetenskap", "Högskolan Kristianstad", "Mars", 2024, "Pågående", NA, "Distanskurs", "Bedömning av studenters hemtentamen och insatser i seminarier i kursen Sexualitet, relationer och hälsa (7,5 hp)",
-    "Handledare inom socialpsykiatri", "Lunds kommun", "November", 2023, "Pågående", NA, "Lund", "Ge socialt och pedagogiskt stöd till personer med psykisk ohälsa (och i vissa fall missbruk) som bor på stödboende",
+    "Bedömande lärare på fristånde kurs inom folkhälsovetenskap", "Högskolan Kristianstad", "Mars", 2024, NA, NA, "Distanskurs", "Bedömning av studenters hemtentamen och insatser i seminarier i kursen Sexualitet, relationer och hälsa (7,5 hp)",
+    "Handledare inom socialpsykiatri", "Lunds kommun", "November", 2023, NA, NA, "Lund", "Ge socialt och pedagogiskt stöd till personer med psykisk ohälsa (och i vissa fall missbruk) som bor på stödboende",
     "Kundhjälpmedelsansvarig", "Jobzone/Ikea", "September", 2015, "Juni", 2016, "Stockholm", "Ansvara för logistik av varuhusets kundhjälpmedel",
     "Kundhjälpmedelsansvarig", "Jobzone/Ikea", "September", 2015, "Juni", 2016, "Stockholm", "Arbetsleda kollegor",
     "Lärare i svenska som andraspråk", "Folkuniversitetet", "Mars", 2015, "Juni", 2015, "Linköping", "Undervisa i yrkessvenska för läkare och andra yrkesverksamma, samt i nybörjarsvenska (Svenska A1)",
