@@ -44,28 +44,29 @@ honors <- tribble(
 )
 
 edu1 <- tribble(
-    ~degree, ~startYear, ~endYear, ~inst, ~where, ~detail,
-    "Lunds universitet", 2018, 2023, "Doktorsexamen i medicinsk vetenskap", "Lund","Bla bla Bla",
-    "Lunds universitet", 2018, 2023, "Doktorsexamen i medicinsk vetenskap", "Lund","Bla bla Bla",
-    "Lunds universitet", 2018, 2023, "Doktorsexamen i medicinsk vetenskap", "Lund","Bla bla Bla",
-    "Linköpings universitet", 2002, 2013, "Magisterexamen i kognitionsvetenskap", "Linköping","Bla bla bla",
-    "Linköpings universitet", 2002, 2013, "Magisterexamen i kognitionsvetenskap", "Linköping","Testing, testing",
+    ~degree, ~startMonth, ~startYear, ~endMonth, ~endYear, ~inst, ~where, ~detail,
+    "Lunds universitet", "Augusti", 2018, "April", 2023, "Doktorsexamen i medicinsk vetenskap", "Lund","Bla bla Bla",
+    "Lunds universitet", "Augusti", 2018, "April", 2023, "Doktorsexamen i medicinsk vetenskap", "Lund","Bla bla Bla",
+    "Lunds universitet", "Augusti", 2018, "April", 2023, "Doktorsexamen i medicinsk vetenskap", "Lund","Bla bla Bla",
+    "Linköpings universitet", "Augusti", 2002, "November", 2013, "Magisterexamen i kognitionsvetenskap", "Linköping","Bla bla bla",
+    "Linköpings universitet", "Augusti", 2002, "November", 2013, "Magisterexamen i kognitionsvetenskap", "Linköping","Testing, testing",
 )
 
 edu2 <- tribble(
-  ~degree, ~startYear, ~endYear, ~inst, ~where, ~detail,
-  "Lunds universitet", 2024, NA, "Litteraturvetenskap: Litterära perspektiv på sjukdom och död (7,5 hp) ", "Distanskurs", "Bla bla bla bla",
-  "Blekinge tekniska högskola", 2016, 2018, "Doktorandstudier i tillämpad hälsovetenskap", "Karlskrona", "Bla bla bla",
-  "Linköpings universitet", 2014, 2015, "Svenska som andraspråk 1 (30 hp)", "Linköping", "Bla bla bla bla",
-  "Linköpings universitet", 2005, 2006, "Engelska A (30 hp)", "Linköping", "Bla bla bla bla",
+  ~degree, ~startMonth, ~startYear, ~endMonth, ~endYear, ~inst, ~where, ~detail,
+  "Lunds universitet", "Februari", 2024, "Pågående", NA,"Litteraturvetenskap: Litterära perspektiv på sjukdom och död (7,5 hp) ", "Distanskurs", "Bla bla bla bla",
+  "Blekinge tekniska högskola", "Augusti", 2016, "Juni", 2018, "Doktorandstudier i tillämpad hälsovetenskap", "Karlskrona", "Bla bla bla",
+  "Linköpings universitet", "Augusti", 2014, "Juni", 2015, "Svenska som andraspråk 1 (30 hp)", "Linköping", "Bla bla bla bla",
+  "Linköpings universitet", "Augusti", 2005, "Juni", 2006, "Engelska A (30 hp)", "Linköping", "Bla bla bla bla",
 )
 
 work <- tribble(
     ~title, ~unit, ~startMonth, ~startYear, ~endMonth, ~endYear, ~where, ~detail,
-    "Handledare i socialpsykiatri", "Lunds kommun", "November", 2023, "Pågående", NA, "Lund", "Ge stöd och vård till personer med psykisk sjukdom/funktionsnedsättning",
+    "Bedömande lärare på fristånde kurs inom folkhälsovetenskap", "Högskolan Kristianstad", "Mars", 2024, "Pågående", NA, "Distanskurs", "Bedömning av studenters hemtentamen och insatser i seminarier i kursen Sexualitet, relationer och hälsa (7,5 hp)",
+    "Handledare inom socialpsykiatri", "Lunds kommun", "November", 2023, "Pågående", NA, "Lund", "Ge socialt och pedagogiskt stöd till personer med psykisk ohälsa (och i vissa fall missbruk) som bor på stödboende",
     "Kundhjälpmedelsansvarig", "Jobzone/Ikea", "September", 2015, "Juni", 2016, "Stockholm", "Ansvara för logistik av varuhusets kundhjälpmedel",
     "Kundhjälpmedelsansvarig", "Jobzone/Ikea", "September", 2015, "Juni", 2016, "Stockholm", "Arbetsleda kollegor",
-    "Lärare i svenska som andraspråk", "Folkuniversitetet", "Mars", 2015, "Juni", 2015, "Linköping", "Organisera och leda utbildningar i yrkessvenska för läkare och andra yrkesverksamma, samt i nybörjarsvenska (Svenska A1)",
+    "Lärare i svenska som andraspråk", "Folkuniversitetet", "Mars", 2015, "Juni", 2015, "Linköping", "Undervisa i yrkessvenska för läkare och andra yrkesverksamma, samt i nybörjarsvenska (Svenska A1)",
     "Taltjänsttolk", "Tolkcentralen, Region Östergötland", "December", 2004, "Juni", 2015, "Linköping", "Genom alternativ- och kompletterande kommunikation (AKK) stötta personer med tal- och språksvårigheter i att kommunicera självständigt",
 )
 
