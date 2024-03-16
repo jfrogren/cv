@@ -50,7 +50,7 @@ edu1 %>%
     with = inst,
     what = degree,
     why = detail,
-    when = glue::glue("{startYear} --> {endYear}",.na = ""),
+    when = glue::glue("{startMonth} {startYear} --> {endMonth} {endYear}",.na = ""),
     where = where
   )
 
@@ -65,7 +65,7 @@ edu2 %>%
     with = inst,
     what = degree,
     why = detail,
-    when = glue::glue("{startYear} --> {endYear}",.na = ""),
+    when = glue::glue("{startMonth} {startYear} --> {endMonth} {endYear}",.na = ""),
     where = where
   )
 
@@ -98,7 +98,12 @@ skills1 %>%
 
 ```
 
-# Fullständig publikationslista
+# Fullständig publikationslista*
+\scriptsize
+*Mina publikationer finns också tillgängliga på [\textcolor{red}{min Google Scholar-profil}](https://scholar.google.com/citations?user=KMitoLwAAAAJ&hl=en).
+\normalsize
+
+
 
 \vspace{4mm}
 
@@ -127,23 +132,42 @@ bibliography_entries("konferensbidrag.bib")
 
 ``` 
 
+\vspace{4mm}
 
+# Presentationer av min forskning
 
+```{r EDUCATION3}
 
-```{r HONORS}
-
-honors %>%
+edu3 %>%
   detailed_entries(
-    with = area,
-    what = accomplishment,
+    with = inst,
+    what = degree,
     why = detail,
-    when = year,
+    when = glue::glue("{startMonth} {startYear} {endMonth} {endYear}",.na = ""),
     where = where
   )
 
 ```
 
-# Meriter
+\vspace{3mm}
+
+\scriptsize
+*Se ett utdrag från webbinariet där jag redogör för resultatet av den fjärde delstudien i min avhandling [\textcolor{red}{på YouTube}](https://www.youtube.com/watch?v=z5JId15gq9w&t=25m21s).
+\normalsize
+
+\vspace{5mm}
+
+## IT-kunskaper
+
+```{r SKILLS2}
+
+skills2 %>%
+  detailed_entries(
+    with = area,
+    what = skills
+  )
+
+```
 
 ```{r PROJECTS}
 
@@ -172,6 +196,8 @@ works %>%
   )
 
 ```
+
+
 
 \pagebreak
 

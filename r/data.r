@@ -26,15 +26,21 @@ skills1 <- tribble(
     "Italienska", "Grundläggande kunskaper"
 )
 
+skills3 <- tribble(
+    ~area, ~skills,
+    "Svenska", "Modersmål, talar och skriver flytande",
+    "Engelska", "Behärskar mycket väl i tal och skrift",
+    "Franska", "Behärskar väl i tal och skrift",
+    "Italienska", "Grundläggande kunskaper"
+)
+
 skills2 <- tribble(
   ~area, ~skills,
-  "Programming Languages", "BASH, Batch, CCL, DAX, JavaScript, Python, R, T-SQL, PL-SQL, VBA",
-  "Markup Languages", "CSS, HTML, LaTeX, Markdown, RMarkdown, SASS, Groff/Troff",
-  "Data Interchange Formats", "CSV, JSON, XML, Feather",
-  "Other Languages", "YAML",
-  "Version Control", "Git",
-  "Text Editors", "Discern Visual Developer, RStudio, SQL Server Management Studio, VIM, Visual Studio, Visual Studio Code",
-  "Microsoft Office", "Excel, Outlook, OneNote, PowerBI, PowerPoint, Visio, Word"
+  "Operativsystem", "OS X, Windows - Behärskar väl",
+  "Microsoft Office", "Excel, Outlook, PowerPoint, Word - Behärskar väl",
+  "Språk", "R, RMarkdown, Markdown, CSS, HTML, YAML - Grundläggande kunskaper",
+  "Versionskontroll", "Git - Grundläggande kunskaper",
+  "Textredigerare", "RStudio, Emacs - Grundläggande kunskaper",
 )
 
 honors <- tribble(
@@ -60,10 +66,22 @@ edu2 <- tribble(
   "Linköpings universitet", "Augusti", 2005, "Juni", 2006, "Engelska A (30 hp)", "Linköping", "Bla bla bla bla",
 )
 
+edu3 <- tribble(
+    ~degree, ~startMonth, ~startYear, ~endMonth, ~endYear, ~inst, ~where, ~detail,
+    "Arrangerad av UserAge forskningsprogram med fokus på brukarinvolvering i forskning", NA, NA, "Maj", 2023,"Avslutningskonferens för forskningsprogrammet UserAge", "Lund", "Presentation (på engelska) av två delstudier i avhandlingen till internationell forskarpublik",
+    "Arrangerad av UserAge forskningsprogram med fokus på brukarinvolvering i forskning", NA, NA, "Maj", 2023,"Avslutningskonferens för forskningsprogrammet UserAge", "Lund", "Presentation (på svenska) av två delstudier i avhandlingen till intresserad allmänhet",
+    "Arrangerat av UserAge i samarbete med föreningen Vetenskap & Allmänhet", NA, NA, "Oktober", 2022, "Webbinarie om medborgarforskningsprojektet Bostadsförsöket*", "Stockholm", "Redogörelse (på svenska) för resultatet i fjärde delstudien i avhandlingen till intresserad allmänhet",
+    "Arrangerad av forskningscentret CASE (Centre for Ageing and Supportive Environments)", NA, NA, "Maj", 2019, "CASE-dagen", "Lund", "Presentation (på svenska) av andra delstudien i avhandlingen till intresserad allmänhet",
+    "Arrangerad av ISG (International Society for Gerontechnology)", NA, NA, "April", 2018, "ISG:s 11:e världsomspännande konferens om geronteknologi", "St Petersburg, Florida, USA", "Presentation (på engelska) av abstract från första delstudien i avhandlingen till internationell forskarpublik",
+)
+
+
+
+
 work <- tribble(
     ~title, ~unit, ~startMonth, ~startYear, ~endMonth, ~endYear, ~where, ~detail,
-    "Bedömande lärare på fristånde kurs inom folkhälsovetenskap", "Högskolan Kristianstad", "Mars", 2024, NA, NA, "Distanskurs", "Bedömning av studenters hemtentamen och insatser i seminarier i kursen Sexualitet, relationer och hälsa (7,5 hp)",
-    "Handledare inom socialpsykiatri", "Lunds kommun", "November", 2023, NA, NA, "Lund", "Ge socialt och pedagogiskt stöd till personer med psykisk ohälsa (och i vissa fall missbruk) som bor på stödboende",
+    "Bedömande lärare på fristånde kurs inom folkhälsovetenskap", "Högskolan Kristianstad", "Mars", 2024, "Pågående", NA, "Distanskurs", "Bedömning av studenters hemtentamen och insatser i seminarier i kursen Sexualitet, relationer och hälsa (7,5 hp)",
+    "Handledare inom socialpsykiatri", "Lunds kommun", "November", 2023, "Pågående", NA, "Lund", "Ge socialt och pedagogiskt stöd till personer med psykisk ohälsa (och i vissa fall missbruk) som bor på stödboende",
     "Kundhjälpmedelsansvarig", "Jobzone/Ikea", "September", 2015, "Juni", 2016, "Stockholm", "Ansvara för logistik av varuhusets kundhjälpmedel",
     "Kundhjälpmedelsansvarig", "Jobzone/Ikea", "September", 2015, "Juni", 2016, "Stockholm", "Arbetsleda kollegor",
     "Lärare i svenska som andraspråk", "Folkuniversitetet", "Mars", 2015, "Juni", 2015, "Linköping", "Undervisa i yrkessvenska för läkare och andra yrkesverksamma, samt i nybörjarsvenska (Svenska A1)",
