@@ -36,13 +36,13 @@ skills3 <- tribble(
 
 skills2 <- tribble(
   ~area, ~skills,
-  "Microsoft Office", "Excel, Outlook, PowerPoint, Word - Behärskar väl",
-  "Distansundervisningsverktyg", "Zoom, Microsoft Teams, Canvas - Grundläggande kunskaper",
-  "Verktyg för kvantitativ datainsamling och analys", "REDCap, SPSS - Behärskar väl",
-  "Verktyg för kvalitativ datainsamling och analys", "NVivo - Behärskar väl",
-  "Språk", "R, RMarkdown, Markdown, CSS, HTML, YAML - Grundläggande kunskaper",
-  "Textredigerare", "RStudio, Emacs - Grundläggande kunskaper",
-  "Versionskontroll", "Git - Grundläggande kunskaper",
+  "Microsoft Office", "Excel, Outlook, PowerPoint, Word — Behärskar väl",
+  "Distansundervisningsverktyg", "Zoom, Microsoft Teams, Canvas — Grundläggande kunskaper",
+  "Verktyg för kvantitativ datainsamling och analys", "REDCap, SPSS — Behärskar väl",
+  "Verktyg för kvalitativ datainsamling och analys", "NVivo — Behärskar väl",
+  "Språk", "R, RMarkdown, Markdown, CSS, HTML, YAML — Grundläggande kunskaper",
+  "Textredigerare", "RStudio, Emacs — Grundläggande kunskaper",
+  "Versionskontroll", "Git — Grundläggande kunskaper",
 )
 
 honors <- tribble(
