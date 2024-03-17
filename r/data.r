@@ -53,19 +53,22 @@ honors <- tribble(
 
 edu1 <- tribble(
     ~degree, ~startMonth, ~startYear, ~endMonth, ~endYear, ~inst, ~where, ~detail,
-    "Lunds universitet", "Augusti", 2018, "April", 2023, "Doktorsexamen i medicinsk vetenskap", "Lund","Bla bla Bla",
-    "Lunds universitet", "Augusti", 2018, "April", 2023, "Doktorsexamen i medicinsk vetenskap", "Lund","Bla bla Bla",
-    "Lunds universitet", "Augusti", 2018, "April", 2023, "Doktorsexamen i medicinsk vetenskap", "Lund","Bla bla Bla",
-    "Linköpings universitet", "Augusti", 2002, "November", 2013, "Magisterexamen i kognitionsvetenskap", "Linköping","Bla bla bla",
-    "Linköpings universitet", "Augusti", 2002, "November", 2013, "Magisterexamen i kognitionsvetenskap", "Linköping","Testing, testing",
+    "Lunds universitet", "Augusti", 2018, "Maj", 2023, "Doktorsexamen i medicinsk vetenskap", "Lund","Avhandlingens titel: On User Involvement in Research on Ageing and Health [Om brukarinvolvering i forskning om åldrande och hälsa]",
+    "Lunds universitet", "Augusti", 2018, "Maj", 2023, "Doktorsexamen i medicinsk vetenskap", "Lund","Ämne: Hälsovetenskap med inriktning gerontologi",
+    "Lunds universitet", "Augusti", 2018, "Maj", 2023, "Doktorsexamen i medicinsk vetenskap", "Lund","Tillhörighet: Forskargruppen Aktivt och hälsosamt åldrande, Institutionen för hälsovetenskaper, Medicinska fakulteten",
+    "Linköpings universitet", "Augusti", 2002, "November", 2013, "Magisterexamen i kognitionsvetenskap", "Linköping", "Tvärvetenskaplig utbildning med fokus på att förstå mänskligt tänkande ur olika aspekter, särskilt i relation till design av modern teknik",
+    "Linköpings universitet", "Augusti", 2002, "November", 2013, "Magisterexamen i kognitionsvetenskap", "Linköping", "Sociologiska kurser (exempel): Kognition och kommunikation (7,5 hp), Kognition och handikapp (7,5 hp), Språk, kultur och kognition (7,5 hp)",
+    "Linköpings universitet", "Augusti", 2002, "November", 2013, "Magisterexamen i kognitionsvetenskap", "Linköping", "Psykologiska kurser (exempel): Utveckling och individuella skillnader (7,5 hp), Kognitiv psykologi (7,5 hp), Kognitiv neuropsykologi (7,5 hp)",
 )
 
 edu2 <- tribble(
   ~degree, ~startMonth, ~startYear, ~endMonth, ~endYear, ~inst, ~where, ~detail,
-  "Lunds universitet", "Februari", 2024, "Pågående", NA,"Litteraturvetenskap: Litterära perspektiv på sjukdom och död (7,5 hp) ", "Distanskurs", "Bla bla bla bla",
+  "Lunds universitet", "Februari", 2024, "Pågående", NA,"Litteraturvetenskap: Litterära perspektiv på sjukdom och död (7,5 hp) ", "Online", "Kvällskurs på halvfart som ges på distans med stöd av den nätbaserade lärplattformen Canvas",
+  "Lunds universitet", "Februari", 2024, "Pågående", NA,"Litteraturvetenskap: Litterära perspektiv på sjukdom och död (7,5 hp) ", "Online", "Diskussion av historiska och samtida litterära och teoretiska verk som aktualiserar och gestaltar människans möte med sjukdom och död",
   "Blekinge tekniska högskola", "Augusti", 2016, "Juni", 2018, "Doktorandstudier i tillämpad hälsovetenskap", "Karlskrona", "Bla bla bla",
-  "Linköpings universitet", "Augusti", 2014, "Juni", 2015, "Svenska som andraspråk 1 (30 hp)", "Linköping", "Bla bla bla bla",
-  "Linköpings universitet", "Augusti", 2005, "Juni", 2006, "Engelska A (30 hp)", "Linköping", "Bla bla bla bla",
+  "Linköpings universitet", "Augusti", 2014, "Juni", 2015, "Svenska som andraspråk 1 (30 hp)", "Linköping", "Studier av svenska språkets struktur (fonetik och grammatik), kulturfrågor, andraspråkutveckling, didaktik och andraspråksundervisning",
+  "Linköpings universitet", "Augusti", 2005, "Juni", 2006, "Engelska A (30 hp)", "Linköping", "Ingående studier av det engelska språkets struktur, inklusive träning av muntlig och skriftlig språkfärdighet",
+  "Linköpings universitet", "Januari", 2004, "April", 2004, "Teknik, kultur, samhälle (7,5 hp)", "Linköping/Online", "Introduktion till ett sociologiskt/kontextbundet synsätt på teknik och teknikutveckling",
 )
 
 edu3 <- tribble(
@@ -88,6 +91,7 @@ work <- tribble(
     "Kundhjälpmedelsansvarig", "Jobzone/Ikea", "September", 2015, "Juni", 2016, "Stockholm", "Arbetsleda kollegor",
     "Lärare i svenska som andraspråk", "Folkuniversitetet", "Mars", 2015, "Juni", 2015, "Linköping", "Undervisa i yrkessvenska för läkare och andra yrkesverksamma, samt i nybörjarsvenska (Svenska A1)",
     "Taltjänsttolk", "Tolkcentralen, Region Östergötland", "December", 2004, "Juni", 2015, "Linköping", "Genom alternativ- och kompletterande kommunikation (AKK) stötta personer med tal- och språksvårigheter i att kommunicera självständigt",
+    "Taltjänsttolk", "Tolkcentralen, Region Östergötland", "December", 2004, "Juni", 2015, "Linköping", "Genom muntliga presentationer informera om vad taltjänst innebär till logoped- och arbetsterapeutstudenter samt intresseföreningar",
 )
 
 works <- tribble(
