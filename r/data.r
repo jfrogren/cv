@@ -68,9 +68,10 @@ skills6 <- tribble(
 
 skills7 <- tribble(
     ~degree, ~startMonth, ~startYear, ~endMonth, ~endYear, ~inst, ~where, ~detail,
+    "Lunds universitet", "April", 2021, "Oktober", 2022,"Bostadsförsöket 2021: Ett medborgarforskningsprojekt om tillgängligheten i Sveriges bostäder", "Lund", "Utarbetat etikansökan för en av avhandlingens delstudier (Studie IV) i anslutning till projektet och säkerställt att etiskt tillstånd för studien erhållits (dnr 2021-02256)",
     "Lunds universitet", "April", 2021, "Oktober", 2022,"Bostadsförsöket 2021: Ett medborgarforskningsprojekt om tillgängligheten i Sveriges bostäder", "Lund", "Fört dialog med intresseföreningar för seniorer (PRO, SPF) och personer med funktionshinder (Neuroförbundet) på lokal nivå för att få dem att engagera sig i forskningsprojektet",
     "Lunds universitet", "April", 2021, "Oktober", 2022,"Bostadsförsöket 2021: Ett medborgarforskningsprojekt om tillgängligheten i Sveriges bostäder", "Lund", "Teknisk support och vägledning via telefon till projektdeltagare",
-    "Lunds universitet", "April", 2021, "Oktober", 2022,"Bostadsförsöket 2021: Ett medborgarforskningsprojekt om tillgängligheten i Sveriges bostäder", "Lund", "Under handledning men med stort mått av självständighet utformat digitala enkäter för studien med hjälp av verktyget REDCap samt analyserat dessa med hjälp av SPSS",
+    "Lunds universitet", "April", 2021, "Oktober", 2022,"Bostadsförsöket 2021: Ett medborgarforskningsprojekt om tillgängligheten i Sveriges bostäder", "Lund", "Utformat digitala enkäter för studien med stöd av handledare och med hjälp av verktyget REDCap, samt analyserat dessa med hjälp av SPSS",
 )
 
 skills8 <- tribble(
