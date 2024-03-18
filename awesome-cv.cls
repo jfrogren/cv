@@ -25,6 +25,7 @@
 \NeedsTeXFormat{LaTeX2e}
 
 
+
 %-------------------------------------------------------------------------------
 %                Class options
 %
@@ -46,6 +47,7 @@
 %-------------------------------------------------------------------------------
 %                3rd party packages
 %-------------------------------------------------------------------------------
+
 % Needed to make fixed length table
 \RequirePackage{array}
 % Needed to handle list environment

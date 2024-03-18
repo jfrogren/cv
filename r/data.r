@@ -1,23 +1,3 @@
-projects <- tribble(
-    ~area, ~accomplishment, ~year, ~where, ~detail,
-    "Lean Six Sigma Green Belt --- Reception Center Intake Process", "California Correctional Health Care Services", 2019, "Region 1 Quality Management", "Completed a Lean Six Sigma Green Belt project on the reception center medical screening process at San Quentin State Prison improving compliance from 2% and a baseline capability aggregate of 29.96% compliance to 84% during the transition phase of the project through application of the lean 6 methodologies and tools. Scope of project affects 6 total state prisons with 3 more to be positively impacted by state wide changes resulting from this project",
-    "Universal Data Scrubber", "California Correctional Health Care Services", 2018, "Region 1 Quality Management", "Creation of a Universal Data Scrubbing tool sent statewide to take most department SQL Report Server exports and turn them into raw data sets for Excel Analytics for end user staff"
-)
-
-certifications <- tribble(
-    ~area, ~accomplishment, ~year, ~where, ~detail,
-    "Certified Lean Six Sigma Green Belt", NA, "", "", NA,
-    "Certified Lean Six Sigma White Belt", NA, "", "", NA,
-    "Microsoft Software", "Various Applications", "", "", "Microsoft Excel - 112",
-    "Microsoft Software", "Various Applications", "", "", "Microsoft Word - 22",
-    "Microsoft Software", "Various Applications", "", "", "Microsoft Outlook - 21",
-    "Microsoft Software", "Various Applications", "", "", "Microsoft Power Point - 18",
-    "Microsoft Software", "Various Applications", "", "", "Share Point - 9",
-    "Microsoft Software", "Various Applications", "", "", "Microsoft Project - 6",
-    "Microsoft Software", "Various Applications", "", "", "Microsoft Access - 3",
-    "Microsoft Software", "Various Applications", "", "", "Microsoft Power BI - 3"
-)
-
 skills1 <- tribble(
     ~area, ~skills,
     "Svenska", "Modersmål, talar och skriver flytande",
@@ -90,12 +70,6 @@ skills10 <- tribble(
     "Lunds universitet", "Januari", 2019, "December", 2020,"Representant för Hälsovetenskapliga institutionen i medicinska fakultetens doktorandråd (MDR)", "Lund", "Deltagit i arbetet med att bevaka och driva frågor som rör forskarutbildning och frågor som rör arbetsrelaterade ekonomiska och sociala rättigheter. ",
 )
 
-honors <- tribble(
-    ~area, ~accomplishment, ~year, ~where, ~detail,
-    "Phi Theta Kappa Academic Honor Society", "Granted to individuals in the 90th percentile of their graduating class", 2015, "Cosumnes River College",NA,
-    "Galt Community Character Coalition Honesty Award", "Awarded by the Galt City Council", 2010, "City Of Galt",NA
-)
-
 edu1 <- tribble(
     ~degree, ~startMonth, ~startYear, ~endMonth, ~endYear, ~inst, ~where, ~detail,
     "Lunds universitet", "Augusti", 2018, "Maj", 2023, "Doktorsexamen i medicinsk vetenskap", "Lund","Avhandlingens titel: On User Involvement in Research on Ageing and Health [Om brukarinvolvering i forskning om åldrande och hälsa]",
@@ -126,9 +100,6 @@ edu3 <- tribble(
     "Arrangerad av ISG (International Society for Gerontechnology)", NA, NA, "April", 2018, "ISG:s 11:e världsomspännande konferens om geronteknologi", "St Petersburg, Florida, USA", "Presentation (på engelska) av abstract från första delstudien i avhandlingen till internationell forskarpublik",
 )
 
-
-
-
 work <- tribble(
     ~title, ~unit, ~startMonth, ~startYear, ~endMonth, ~endYear, ~where, ~detail,
     "Bedömande lärare på fristånde kurs inom folkhälsovetenskap", "Högskolan Kristianstad", "Mars", 2024, "Pågående", NA, "Distanskurs", "Bedömning av studenters hemtentamen och insatser i seminarier i kursen Sexualitet, relationer och hälsa (7,5 hp)",
@@ -140,8 +111,4 @@ work <- tribble(
     "Taltjänsttolk", "Tolkcentralen, Region Östergötland", "December", 2004, "Juni", 2015, "Linköping", "Genom muntliga presentationer informera om vad taltjänst innebär till logoped- och arbetsterapeutstudenter samt intresseföreningar",
 )
 
-works <- tribble(
-    ~area, ~accomplishment, ~year, ~where, ~detail,
-    "Runes", "Convert a string of text characters to Elder Futhark Runes ", "February 2020", "https://github.com/tallguyjenks/runes", "Author and Maintainer",
-    "Runes", "Convert a string of text characters to Elder Futhark Runes ", "February 2020", "https://github.com/tallguyjenks/runes", "Released to CRAN",
-)
+

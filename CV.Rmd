@@ -7,12 +7,12 @@ profilepic: "./img/me.jpg"
 www: "Edward Lindahlsgatan 9, 217 42 Malmö"
 email: "joakim@frogren.se"
 phone: +46 73 516 12 12
-date: "`r format(Sys.time(), '%B %Y')`"
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
 headcolor: 121270
 aboutme: "Mina intressen för kommunikation och hälsa löper som en röd tråd genom mina studie- och yrkesval. Erfarenheterna jag bär med mig har också format mig till en god pedagog med tålamod och förståelse för människors olika förutsättningar. Efter erlagd doktorsexamen och en tids uppehåll från akademin, är jag nu redo att ta nästa steg i min akademiska karriär."
 given-name-pattern: Joakim
 family-name-pattern: Frögren
-docname: CV
+docname: Curriculum Vitae
 output: 
     vitae::awesomecv:
             pandoc_args: ["--lua-filter=highlight-author.lua"]
@@ -289,3 +289,9 @@ skills10 %>%
 
 ```
 
+\scriptsize
+
+\vspace{4mm}
+
+## Referenser 
+Lämnas på begäran
