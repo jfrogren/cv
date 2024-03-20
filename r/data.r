@@ -56,7 +56,7 @@ skills7 <- tribble(
 
 skills8 <- tribble(
     ~degree, ~startMonth, ~startYear, ~endMonth, ~endYear, ~inst, ~where, ~detail,
-    "Lunds universitet", "September", 2019, "December", 2020,"Doktorandrepresentant i institutionsstyrelsen (Hälsovetenskapliga institutionen)", "Lund", "- Deltagit i arbetet med att bevaka och driva frågor som rör forskarutbildning och frågor som rör arbetsrelaterade ekonomiska och sociala rättigheter",
+    "Lunds universitet", "September", 2019, "December", 2020,"Doktorandrepresentant i institutionsstyrelsen (Hälsovetenskapliga institutionen)", "Lund", "Deltagit i arbetet med att bevaka och driva frågor som rör forskarutbildning och frågor som rör arbetsrelaterade ekonomiska och sociala rättigheter",
 )
 
 skills9 <- tribble(
@@ -94,7 +94,7 @@ edu2 <- tribble(
 edu3 <- tribble(
     ~degree, ~startMonth, ~startYear, ~endMonth, ~endYear, ~inst, ~where, ~detail,
     "Arrangerad av UserAge forskningsprogram med fokus på brukarinvolvering i forskning", NA, NA, "April", 2023,"Avslutningskonferens för forskningsprogrammet UserAge", "Lund", "Presentation (på engelska) av två delstudier i avhandlingen till internationell forskarpublik",
-    "Arrangerad av UserAge forskningsprogram med fokus på brukarinvolvering i forskning", NA, NA, "Maj", 2023,"Avslutningskonferens för forskningsprogrammet UserAge", "Lund", "Presentation (på svenska) av två delstudier i avhandlingen till intresserad allmänhet",
+    "Arrangerad av UserAge forskningsprogram med fokus på brukarinvolvering i forskning", NA, NA, "April", 2023,"Avslutningskonferens för forskningsprogrammet UserAge", "Lund", "Presentation (på svenska) av två delstudier i avhandlingen till intresserad allmänhet",
     "Arrangerat av UserAge i samarbete med föreningen Vetenskap & Allmänhet", NA, NA, "Oktober", 2022, "Webbinarie om medborgarforskningsprojektet Bostadsförsöket*", "Stockholm/Online", "Redogörelse (på svenska) för resultatet i fjärde delstudien i avhandlingen till intresserad allmänhet",
     "Arrangerad av forskningscentret CASE (Centre for Ageing and Supportive Environments)", NA, NA, "Maj", 2019, "CASE-dagen", "Lund", "Presentation (på svenska) av andra delstudien i avhandlingen till intresserad allmänhet",
     "Arrangerad av ISG (International Society for Gerontechnology)", NA, NA, "April", 2018, "ISG:s 11:e världsomspännande konferens om geronteknologi", "St Petersburg, Florida, USA", "Presentation (på engelska) av abstract från första delstudien i avhandlingen till internationell forskarpublik",

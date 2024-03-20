@@ -189,7 +189,7 @@ skills3 %>%
 
 ```
 
-\vspace{4mm}
+\vspace{6mm}
 
 ## Engagemang i forskningsprojekt
 
