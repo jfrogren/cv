@@ -80,8 +80,6 @@ edu1 <- tribble(
 
 edu2 <- tribble(
   ~degree, ~startMonth, ~startYear, ~endMonth, ~endYear, ~inst, ~where, ~detail,
-  "Lunds universitet", "Juni", 2024, "Pågående", NA,"Litteraturvetenskap: Perspektiv på erotisk litteratur och pornografi (7,5 hp) ", "Online", "Kvällskurs på halvfart som ges på distans med stöd av den nätbaserade lärplattformen Canvas",
-  "Lunds universitet", "Juni", 2024, "Pågående", NA,"Litteraturvetenskap: Perspektiv på erotisk litteratur och pornografi (7,5 hp) ", "Online", "Belyser hur erotisk litteratur och pornografi kan tolkas ur historiska, samhälleliga, feministiska, queera och didaktiska perspektiv",
   "Lunds universitet", "Februari", 2024, "Maj", 2024,"Litteraturvetenskap: Litterära perspektiv på sjukdom och död (7,5 hp) ", "Online", "Kvällskurs på halvfart som gavs på distans med stöd av den nätbaserade lärplattformen Canvas",
   "Lunds universitet", "Februari", 2024, "Maj", 2024,"Litteraturvetenskap: Litterära perspektiv på sjukdom och död (7,5 hp) ", "Online", "Diskussion av historiska och samtida litterära och teoretiska verk som aktualiserar och gestaltar människans möte med sjukdom och död",
   "Blekinge tekniska högskola", "Augusti", 2016, "Juni", 2018, "Doktorandstudier i tillämpad hälsovetenskap", "Karlskrona", "Två års forskningsstudier inom ramen för Horizon 2020-projektet SMART4MD som genomfördes i samverkan mellan fem europeiska länder",
