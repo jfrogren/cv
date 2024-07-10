@@ -9,12 +9,10 @@ skills1 <- tribble(
 skills2 <- tribble(
   ~area, ~skills,
   "Microsoft Office", "Excel, Outlook, PowerPoint, Word — Behärskar väl",
-  "Distansundervisningsverktyg", "Zoom, Microsoft Teams, Canvas — Grundläggande kunskaper",
+  "Distansundervisningsverktyg", "Zoom, Microsoft Teams, Canvas — Behärskar väl",
   "Verktyg för kvantitativ datainsamling och analys", "REDCap, SPSS — Behärskar väl",
   "Verktyg för kvalitativ datainsamling och analys", "NVivo — Behärskar väl",
   "Språk", "R, RMarkdown, Markdown, CSS, HTML, YAML — Grundläggande kunskaper",
-  "Textredigerare", "RStudio, Emacs — Grundläggande kunskaper",
-  "Versionskontroll", "Git — Grundläggande kunskaper",
 )
 
 skills3 <- tribble(
@@ -82,8 +80,10 @@ edu1 <- tribble(
 
 edu2 <- tribble(
   ~degree, ~startMonth, ~startYear, ~endMonth, ~endYear, ~inst, ~where, ~detail,
-  "Lunds universitet", "Februari", 2024, "Pågående", NA,"Litteraturvetenskap: Litterära perspektiv på sjukdom och död (7,5 hp) ", "Online", "Kvällskurs på halvfart som ges på distans med stöd av den nätbaserade lärplattformen Canvas",
-  "Lunds universitet", "Februari", 2024, "Pågående", NA,"Litteraturvetenskap: Litterära perspektiv på sjukdom och död (7,5 hp) ", "Online", "Diskussion av historiska och samtida litterära och teoretiska verk som aktualiserar och gestaltar människans möte med sjukdom och död",
+  "Lunds universitet", "Juni", 2024, "Pågående", NA,"Litteraturvetenskap: Perspektiv på erotisk litteratur och pornografi (7,5 hp) ", "Online", "Kvällskurs på halvfart som ges på distans med stöd av den nätbaserade lärplattformen Canvas",
+  "Lunds universitet", "Juni", 2024, "Pågående", NA,"Litteraturvetenskap: Perspektiv på erotisk litteratur och pornografi (7,5 hp) ", "Online", "Belyser hur erotisk litteratur och pornografi kan tolkas ur historiska, samhälleliga, feministiska, queera och didaktiska perspektiv",
+  "Lunds universitet", "Februari", 2024, "Maj", 2024,"Litteraturvetenskap: Litterära perspektiv på sjukdom och död (7,5 hp) ", "Online", "Kvällskurs på halvfart som gavs på distans med stöd av den nätbaserade lärplattformen Canvas",
+  "Lunds universitet", "Februari", 2024, "Maj", 2024,"Litteraturvetenskap: Litterära perspektiv på sjukdom och död (7,5 hp) ", "Online", "Diskussion av historiska och samtida litterära och teoretiska verk som aktualiserar och gestaltar människans möte med sjukdom och död",
   "Blekinge tekniska högskola", "Augusti", 2016, "Juni", 2018, "Doktorandstudier i tillämpad hälsovetenskap", "Karlskrona", "Två års forskningsstudier inom ramen för Horizon 2020-projektet SMART4MD som genomfördes i samverkan mellan fem europeiska länder",
   "Blekinge tekniska högskola", "Augusti", 2016, "Juni", 2018, "Doktorandstudier i tillämpad hälsovetenskap", "Karlskrona", "Projektet gick ut på hur teknik i form av en hälsoapplikation på en surfplatta kan underlätta vardagen för äldre personer och deras närstående",
   "Linköpings universitet", "Augusti", 2014, "Juni", 2015, "Svenska som andraspråk 1 (30 hp)", "Linköping", "Studier av svenska språkets struktur (fonetik och grammatik), kulturfrågor, andraspråkutveckling, didaktik och andraspråksundervisning",
@@ -102,7 +102,7 @@ edu3 <- tribble(
 
 work <- tribble(
     ~title, ~unit, ~startMonth, ~startYear, ~endMonth, ~endYear, ~where, ~detail,
-    "Bedömande lärare på fristånde kurs inom folkhälsovetenskap", "Högskolan Kristianstad", "Mars", 2024, "Pågående", NA, "Distanskurs", "Bedömning av studenters hemtentamen och insatser i seminarier i kursen Sexualitet, relationer och hälsa (7,5 hp)",
+    "Examinerande lärare på fristånde kurs inom folkhälsovetenskap", "Högskolan Kristianstad", "Mars", 2024, "Juni", 2024, "Distanskurs", "Examination av studenters hemtentamen och insatser i seminarier i kursen Sexualitet, relationer och hälsa (7,5 hp)",
     "Handledare inom socialpsykiatri", "Lunds kommun", "November", 2023, "Pågående", NA, "Lund", "Ge socialt och pedagogiskt stöd till personer med psykisk ohälsa (och i vissa fall missbruk) som bor på stödboende",
     "Kundhjälpmedelsansvarig", "Jobzone/Ikea", "September", 2015, "Juni", 2016, "Stockholm", "Ansvara för logistik av varuhusets kundhjälpmedel",
     "Kundhjälpmedelsansvarig", "Jobzone/Ikea", "September", 2015, "Juni", 2016, "Stockholm", "Arbetsleda kollegor",
